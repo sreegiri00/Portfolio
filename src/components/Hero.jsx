@@ -39,30 +39,30 @@ const Hero = () => {
     <section 
       id="home" 
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden py-20"
+      className="relative flex items-center justify-center min-h-screen py-20 overflow-hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-gray-50 dark:from-gray-900 dark:to-[#121212] z-0"></div>
       
-      <div className="hero-decoration absolute top-1/4 right-1/4 w-64 h-64 bg-blue-400/10 dark:bg-blue-500/10 rounded-full blur-3xl"></div>
-      <div className="hero-decoration absolute bottom-1/4 left-1/3 w-80 h-80 bg-purple-400/10 dark:bg-purple-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute w-64 h-64 rounded-full hero-decoration top-1/4 right-1/4 bg-blue-400/10 dark:bg-blue-500/10 blur-3xl"></div>
+      <div className="absolute rounded-full hero-decoration bottom-1/4 left-1/3 w-80 h-80 bg-purple-400/10 dark:bg-purple-500/10 blur-3xl"></div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container relative z-10 px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="hero-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 leading-tight">
-            Frontend Developer & UI Designer
+          <h1 className="mb-6 text-4xl font-bold leading-tight text-transparent hero-title md:text-6xl lg:text-7xl bg-clip-text bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300">
+            Full Stack Developer & UI Designer
           </h1>
           
-          <p className="hero-subtitle text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="max-w-2xl mx-auto mb-10 text-lg leading-relaxed text-gray-700 hero-subtitle md:text-xl dark:text-gray-300">
             I create elegant, high-performance web applications with modern technologies and exceptional user experiences.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <a 
               href="#projects" 
               className="group inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full transition-all hover:bg-blue-700 transform hover:scale-[1.02] active:scale-[0.98]"
             >
               View My Work
-              <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </a>
             
             <a 
@@ -74,10 +74,10 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute transform -translate-x-1/2 bottom-12 left-1/2 animate-bounce">
           <a 
             href="#about" 
-            className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-md"
+            className="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md dark:bg-gray-800"
             aria-label="Scroll down"
           >
             <svg 
