@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import imgs from '../img/sg.jpg'
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -37,7 +38,7 @@ const About = () => {
               <div className="relative">
                 <div className="overflow-hidden bg-gray-100 aspect-square rounded-2xl dark:bg-gray-800">
                   <img 
-                    src="src\img\sg.jpg" 
+                    src={imgs} 
                     alt="Portrait" 
                     className="object-cover w-full h-full"
                   />
