@@ -37,20 +37,20 @@ const Skills = () => {
 
   return (
     <section id="skills" ref={sectionRef} className="py-24 bg-white dark:bg-[#121212]">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container px-4 mx-auto md:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 animate-on-scroll opacity-0 transition-opacity duration-1000">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="mb-12 text-center transition-opacity duration-1000 opacity-0 animate-on-scroll">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white">
               My Skills
             </h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto text-lg text-gray-700 dark:text-gray-300">
               A comprehensive overview of my technical skills and proficiency levels.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 mt-12">
-            <div className="animate-on-scroll opacity-0 transition-opacity duration-1000 delay-200">
-              <h3 className="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Frontend Development</h3>
+          <div className="grid gap-12 mt-12 md:grid-cols-2">
+            <div className="transition-opacity duration-1000 delay-200 opacity-0 animate-on-scroll">
+              <h3 className="mb-6 text-xl font-semibold text-gray-900 dark:text-white">Frontend Development</h3>
               <div className="space-y-6">
                 {frontendSkills.map(skill => (
                   <SkillBar key={skill.name} skill={skill} />
@@ -58,22 +58,22 @@ const Skills = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0 transition-opacity duration-1000 delay-400">
-              <h3 className="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Backend Development</h3>
+            <div className="transition-opacity duration-1000 opacity-0 animate-on-scroll delay-400">
+              <h3 className="mb-6 text-xl font-semibold text-gray-900 dark:text-white">Backend Development</h3>
               <div className="space-y-6">
                 {backendSkills.map(skill => (
                   <SkillBar key={skill.name} skill={skill} />
                 ))}
               </div>
               
-              <h3 className="text-xl font-semibold mb-6 mt-10 text-gray-900 dark:text-white">Design</h3>
+              <h3 className="mt-10 mb-6 text-xl font-semibold text-gray-900 dark:text-white">Design</h3>
               <div className="space-y-6">
                 {designSkills.map(skill => (
                   <SkillBar key={skill.name} skill={skill} />
                 ))}
               </div>
               
-              <h3 className="text-xl font-semibold mb-6 mt-10 text-gray-900 dark:text-white">Other Skills</h3>
+              <h3 className="mt-10 mb-6 text-xl font-semibold text-gray-900 dark:text-white">Other Skills</h3>
               <div className="space-y-6">
                 {otherSkills.map(skill => (
                   <SkillBar key={skill.name} skill={skill} />

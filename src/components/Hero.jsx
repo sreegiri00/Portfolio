@@ -74,10 +74,10 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="absolute transform -translate-x-1/2 bottom-12 left-1/2 animate-bounce">
+        <div className="absolute transform -translate-x-1/2 bottom-12 left-1/2 animate-bounce scroll-button">
           <a 
             href="#about" 
-            className="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md dark:bg-gray-800"
+            className="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md dark:bg-gray-800 "
             aria-label="Scroll down"
           >
             <svg 
